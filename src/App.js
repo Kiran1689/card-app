@@ -270,6 +270,8 @@ const App = () => {
       <div className="card-list">
         {filteredCards.map((card, index) => (
           <div key={index} className="card-item">
+            {card.card_type === 'burner' && <img className="card-type-icon" src={burnImage} alt="Burner" />}
+            {card.card_type === 'subscription' && <img className="card-type-icon" src={subscriptionImage} alt="Subscription" />}
             <div className="card-name">{card.name}</div>
             <div className="budget">{card.budget_name}</div>
             <div className="card-info">
