@@ -1,0 +1,221 @@
+/* App.css */
+body {
+  font-family: 'Google Sans', sans-serif;
+}
+.app {
+  margin: 20px;
+}
+
+.navbar {
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000000;
+  font-family: 'Google Sans', sans-serif;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.navbar li.active {
+  background-color: #efbaea;
+}
+
+.search-filter {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: 'Google Sans', sans-serif;
+}
+
+.search-filter input[type='text'] {
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  font-family: 'Google Sans', sans-serif;
+}
+
+.search-filter button {
+  padding: 5px 10px;
+  background-color: #ff00e1;
+  border: 1px solid #fff;
+  cursor: pointer;
+  font-family: 'Google Sans', sans-serif;
+}
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card-item {
+  position: relative;
+  flex-basis: 100%;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 35px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  overflow:visible;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.card-name {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-family: 'Google Sans', sans-serif;
+}
+
+.budget {
+  margin-bottom: 8px;
+}
+
+.card-details {
+  margin-bottom: 8px;
+}
+
+
+
+.spent, .balance {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.spent div, .balance div {
+  margin-right: 8px;
+}
+
+.spent-bar, .balance-bar {
+  transition: width 0.3s ease-in-out;
+}
+
+.card-type {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+}
+
+.card-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.info-item {
+  display: flex;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+
+.label {
+  margin-right: 5px;
+  padding-right: 45px;
+}
+
+.progress-bar {
+  position: relative;
+  height: 10px;
+  background-color: #eee;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+
+.spent-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 2px;
+  background-color: #10c03c;
+}
+
+.balance-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-color: #ff00e1;
+}
+
+
+.spent,
+.balance {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+
+
+.spent-circle,
+.balance-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.balance-circle {
+  background-color: #ff00e1;
+
+}
+
+.spent .text {
+  margin-right: 5px;
+}
+
+.spent-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #10c03c;
+  margin-right: 5px;
+}
+
+.spent .value {
+  margin-left: auto;
+  font-weight: bold;
+}
+
+.balance .value {
+  margin-left: auto;
+  font-weight: bold;
+}
+
+.row .value {
+  font-weight: bold;
+}
+
