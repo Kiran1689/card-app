@@ -2,6 +2,8 @@
 
 This is a Card Management App built with React that allows users to view and filter card information.
 
+Visit live here: https://card-app-theta.vercel.app/
+
 ## Features
 - Display a list of cards with their details, including name, budget name, amount, frequence, expiry, spent, and balance.
 - Filter cards based on different criteria: owner, status, card type, and search by card name.
@@ -36,3 +38,5 @@ Make sure you have the following software installed:
    - npm start
 
 5. Open your browser and visit http://localhost:3000 to view the app.
+
+
