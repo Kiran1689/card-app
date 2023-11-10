@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import burnImage from "./images/fire.png";
+import subscriptionImage from "./images/reuse.png";
+
 
 const mockApiResponse = {
   data: [
